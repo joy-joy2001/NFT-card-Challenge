@@ -22,12 +22,18 @@ body {
 
 .card-box {
     background-color: hsl(216, 50%, 16%);
-    border-radius: 12px;
-    height: 450px;
+    border-radius: 15px;
+    box-shadow: 10px 7px 5px 12px #0c1729;
+    height: 500px;
     padding: 25px;
     position: relative;
-    top: 20%;
     margin: 0 auto;
-    width: 300px;
+    top: 20%;
+    width: 310px;
+    
+}
 
+img {
+    width: 260px;
+    border-radius: 15px;
 }
