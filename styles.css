@@ -11,6 +11,14 @@ html, body {
     color: hsl(228, 45%, 44%); 
 }
 
+.avatar-img {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    float: left;
+}
+
 body {
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
@@ -37,9 +45,8 @@ body {
 .eth-amount {
     color: hsl(178, 100%, 50%);
     margin-right: 35%;
-    font-size: 14px;
+    margin: 0 35% 0 1%;
     font-weight: bold;
-
 }
 
 h3 {
@@ -57,16 +64,16 @@ hr {
     border-radius: 15px;
 }
 
+.nft-info {
+font-size: 16px;
+}
+
 p {
     color: hsl(215, 51%, 70%);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .time-icon {
-    height:13px;
-    width: 12px;
-}
-
-.time-left {
-    font-size: 14px;
+    height:14px;
+    width: 14px;
 }
