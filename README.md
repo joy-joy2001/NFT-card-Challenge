@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-[final-img]final-website-images\nft-card-final-website.jpg
-[final-img-hover-state]final-website-images\nft-card-final-hover.jpg
+![final-img](final-website-images\nft-card-final-website.jpg)
+![final-img-hover-state](final-website-images\nft-card-final-hover.jpg)
 
 ## My process
 
