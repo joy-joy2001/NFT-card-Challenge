@@ -11,6 +11,10 @@ html, body {
     color: hsl(228, 45%, 44%); 
 }
 
+.author {
+    color: white;
+}
+
 .avatar-img {
     width: 30px;
     height: 30px;
