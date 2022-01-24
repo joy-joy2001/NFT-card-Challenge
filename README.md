@@ -14,8 +14,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -27,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-final-website-images\nft-card-final-website.jpg
-final-website-images\nft-card-final-hover.jpg
+[final-img]final-website-images\nft-card-final-website.jpg
+[final-img-hover-state]final-website-images\nft-card-final-hover.jpg
 
 ## My process
 
