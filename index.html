@@ -4,43 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Favicon link -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet link -->
   <link rel="stylesheet" href="styles.css">
   
   <title>NFT Card Component</title>
 </head>
 <body>
-  <div class="card-box">
-    <div class="nft-img-container">
-      <img  src="images\image-equilibrium.jpg" alt="standing-cube">
-      <div class="after">
-        <img class="view-icon" src="images\icon-view.svg" alt="eye-icon">
+  <!-- It is good pracice to structure your website for accessiblity. Also important to include a h1 tag for SEO (search engineoptimisation) -->
+  <header>
+    <h1 style="display: none;">NFT Preview</h1>
+  </header>
+  <main>
+    <div class="card-box">
+      <div class="nft-img-container">
+        <img  src="images\image-equilibrium.jpg" alt="standing-cube">
+        <div class="after">
+          <img class="view-icon" src="images\icon-view.svg" alt="eye-icon">
+        </div>
       </div>
-    </div>
-    
-    
-    <a href="" id="equ3429"><h3>Equilibrium #3429</h3></a>  
-    <p class="nft-info">Our Equilibrium collection promotes balance and calm.</p>
-    <p>
-      <img class="eth-icon" src="images\icon-ethereum.svg" alt="ethereum-icon">
-      <span class="eth-amount">0.041 ETH</span> 
-      <img class="time-icon" src="images\icon-clock.svg" alt="clock-icon">
-      <span> 3 days left</span>
-    </p>
-    <hr>
-    <img class="avatar-img" src="images\image-avatar.png" alt="jules-wyvern"> 
-    <p>   
-      Creation of 
-      <span class="author"><a href="" id="jules-wyvern">Jules Wyvern</a></span>
-    </p>   
-  </div>
-
-  <div class="attribution">
+      <h3><a href="" id="equ3429">Equilibrium #3429</a></h3>
+      <p class="nft-tagline">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="nft-info">
+        <img class="eth-icon" src="images\icon-ethereum.svg" alt="ethereum-icon"><p class="eth-amount">0.041 ETH</p> 
+        <img class="time-icon" src="images\icon-clock.svg" alt="clock-icon"><p> 3 days left</p>
+        <!-- When making block elements, inline elements, a whitespace of approc 4px will exist between elements as the HMTL preserves this,
+             hence why it is important to put elements side by side! -->
+      </div>
+      <hr>
+      <div class="author-info">
+        <img class="avatar-img" src="images\image-avatar.png" alt="jules-wyvern"> 
+        <p>Creation of <a href="" id="jules-wyvern">Jules Wyvern</a></p>
+        <!-- Never nest a block element in an inline element. But you can nest an inline element inside a block i.e. nest an anchor tag inside
+             a paragraph tag -->
+      </div>
+    </div>    
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Joy E</a>.
-  </div>
+  </footer>
 </body>
 </html>
