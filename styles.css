@@ -28,7 +28,7 @@ a {
     border: 2px solid white;
     border-radius: 50%;
     margin-right: 5%;
-    float: left;
+    vertical-align: middle;
 }
 
 body {
@@ -62,6 +62,10 @@ div.card-container a {
 /* Of course, the div does not need to be specified if you want to target any element with the class 'card-container': that's why the above
    code works */
 
+div.nft-info p, div.author-info p{
+    display: inline;
+}
+
 .eth-icon {
     height: 13px;
     width: 9px;
@@ -70,7 +74,6 @@ div.card-container a {
 .eth-amount {
     color: hsl(178, 100%, 50%);
     margin-right: 35%;
-    margin: 0 35% 0 1%;
     font-weight: bold;
 }
 
@@ -84,27 +87,22 @@ main {
     height: inherit;
 }
 
-.nft-img-container {
+.nft-img-container , .nft-img-container img {
     position: relative;
     width: 260px;
     height: 260px;
-    
-}
-
-.nft-img-container img {
-    width: 260px;
     border-radius: 15px;
 }
 
-.nft-img-container .nft-img-overlay {
+.nft-img-overlay {
     position: absolute;
     top: 0;
     left: 0;
+    /* But why aboslute? Why can I not chnage the bottom-position when position: relative? */
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
     display: none;
-    color: #FFF;
 }
 
 .nft-img-container:hover .nft-img-overlay {
@@ -112,23 +110,23 @@ main {
     background: hsla(178, 100%, 50%, 0.438);
 }
 
-.nft-info {
-font-size: 16px;
-}
-
 p {
     color: hsl(215, 51%, 70%);
     font-size: 14px;
 }
 
-.time-icon {
-    height:14px;
-    width: 14px;
-}
-
-.nft-img-container .after .view-icon {
+img.view-icon {
     height: 20%;
     width: 20%;
     margin-top: 40%;
     margin-left: 40%;
+}
+
+.nft-tagline {
+    font-size: 15px;
+}
+
+.time-icon {
+    height:14px;
+    width: 14px;
 }
