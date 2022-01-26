@@ -22,14 +22,6 @@ a {
     color: hsl(228, 45%, 44%); 
 }
 
-.author a {
-    color: white;
-}
-
-.author a:hover {
-    color: hsl(178, 100%, 50%);
-}
-
 .avatar-img {
     width: 30px;
     height: 30px;
@@ -44,7 +36,7 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-.card-box {
+.card-container {
     background-color: hsl(216, 50%, 16%);
     border-radius: 15px;
     box-shadow: 10px 7px 5px 12px #0c1729;
@@ -52,10 +44,23 @@ body {
     padding: 25px;
     position: relative;
     margin: 0 auto;
-    top: 20%;
+    top: 10%;
     width: 310px;
     box-sizing: border-box;
 }
+
+/* Descendant Combinator and Class seclectors */
+div.card-container a {
+    color: white;
+}
+
+.card-container a:hover {
+    color: hsl(178, 100%, 50%);
+}
+/* div.card-container: will select divs with the class specificed after the dot. In this case, its card-container */
+/* Descendant combinator is when the descendants of the first element specified is selected, in this case, it is divs with class card-container */
+/* Of course, the div does not need to be specified if you want to target any element with the class 'card-container': that's why the above
+   code works */
 
 .eth-icon {
     height: 13px;
@@ -69,18 +74,14 @@ body {
     font-weight: bold;
 }
 
-#equ3429 h3 {
-    color: white;  
-}
-
-#equ3429 h3:hover{
-    color: hsl(178, 100%, 50%);
-}
-
 hr {
     border: 0;
     height: 1px;
     border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+main {
+    height: inherit;
 }
 
 .nft-img-container {
@@ -95,7 +96,7 @@ hr {
     border-radius: 15px;
 }
 
-.nft-img-container .after {
+.nft-img-container .nft-img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -106,7 +107,7 @@ hr {
     color: #FFF;
 }
 
-.nft-img-container:hover .after {
+.nft-img-container:hover .nft-img-overlay {
     display: block;
     background: hsla(178, 100%, 50%, 0.438);
 }
